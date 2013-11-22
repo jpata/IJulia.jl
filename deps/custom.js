@@ -48,6 +48,8 @@
 
 // end of IPython unmodified version 
 
+//preferentially render PNG
+IPython.OutputArea.display_order=["javascript", "html", "latex", "png", "svg", "jpeg", "text"] 
 
 $([IPython.events]).on('notebook_loaded.Notebook', function(){
     // add here logic that should be run once per **notebook load**
